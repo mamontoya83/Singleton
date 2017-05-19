@@ -27,7 +27,7 @@ class Deck {
 		Collections.shuffle(cards, new Random( ));
 	}
 
-	public static synchronized Deck getDeck(){
+	public static Deck getDeck(){
 		if(deck == null){
 			deck = new Deck();
 		}
